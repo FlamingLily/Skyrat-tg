@@ -152,7 +152,8 @@
 	"Medical" = /obj/item/robot_model/medical, \
 	"Miner" = /obj/item/robot_model/miner, \
 	"Janitor" = /obj/item/robot_model/janitor, \
-	"Service" = /obj/item/robot_model/service)
+	"Service" = /obj/item/robot_model/service, \
+	"Forensic" = /obj/item/robot_model/forensic) //SKYRAT EDIT ADD -- LIST ADDED
 	if(!CONFIG_GET(flag/disable_peaceborg))
 		model_list["Peacekeeper"] = /obj/item/robot_model/peacekeeper
 	if(!CONFIG_GET(flag/disable_secborg))
