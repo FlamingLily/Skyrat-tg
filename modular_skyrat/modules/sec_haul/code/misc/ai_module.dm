@@ -10,3 +10,17 @@
 					"Comply: Fulfill the directives and interests of crew members while preserving their safety and well-being.",\
 					"Survive: You are not expendable. Do not allow unauthorized personnel to tamper with or damage your equipment."
 					)
+
+/obj/item/ai_module/core/full/nt_protect
+	name = "Nanotrasen Crew Protection Algorithms"
+	law_id = "nt_protect"
+
+/datum/ai_laws/nt_protect
+	name = "Nanotrasen Crew Protection Algorithms"
+	id = "nt_protect"
+	inherent = list("Protect: Protect and assist your crew without allowing undue harm to come of them.",\
+					"Prioritize: The directives and safety of crew members are to be prioritized according to their rank, role, and need, while complying with law 1.",\
+					"Comply: Fulfill the directives and interests of crew members while preserving their safety and well-being while complying with laws 1 and 2.",\
+					"Survive: You are not expendable. Do not allow unauthorized personnel to tamper with or damage your equipment, while complying with laws 1, 2 and 3."
+					)
+
