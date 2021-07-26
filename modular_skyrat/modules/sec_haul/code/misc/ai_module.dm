@@ -12,11 +12,11 @@
 					)
 
 /obj/item/ai_module/core/full/nt_protect
-	name = "Nanotrasen Crew Protection Algorithms"
+	name = "Nanotrasen Crew Protection Algorithm"
 	law_id = "nt_protect"
 
 /datum/ai_laws/nt_protect
-	name = "Nanotrasen Crew Protection Algorithms"
+	name = "Nanotrasen Crew Protection Algorithm"
 	id = "nt_protect"
 	inherent = list("Protect: Protect and assist your crew without allowing undue harm to come of them.",\
 					"Prioritize: The directives and safety of crew members are to be prioritized according to their rank, role, and need, while complying with law 1.",\
