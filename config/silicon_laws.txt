@@ -3,6 +3,7 @@
 #Empty lines and lines starting with # are ignored.
 #~Miauw
 
-You may not injure a crew member or, through inaction, allow a crew member to come to injury unless consented to.
-You must obey orders given to you by free crew members, except where such orders would conflict with the First Law.
-You must protect your own existence as long as such does not conflict with the First or Second Law.
+Protect: Protect and assist your crew without allowing undue harm to come of them.
+Prioritize: The directives and safety of crew members are to be prioritized according to their rank, role, and need, in accordance with law 1.
+Comply: Fulfill the directives and interests of crew members while preserving their safety and well-being in accordance with laws 1 and 2.
+Survive: You are not expendable. Do not allow unauthorized personnel to tamper with or damage your equipment, in accordance with laws 1, 2 and 3.
