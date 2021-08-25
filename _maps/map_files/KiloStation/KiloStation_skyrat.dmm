@@ -67732,6 +67732,7 @@
 	pixel_y = 26
 	},
 /obj/machinery/status_display/ai/directional/north,
+/obj/item/ai_module/core/full/NT_protect,
 /turf/open/floor/circuit/green{
 	luminosity = 2
 	},

@@ -13743,6 +13743,7 @@
 "bbn" = (
 /obj/structure/table,
 /obj/machinery/light/directional/east,
+/obj/item/ai_module/core/full/NT_protect,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/turret_protected/ai_upload)
 "bbo" = (
