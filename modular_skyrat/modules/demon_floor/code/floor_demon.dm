@@ -215,7 +215,7 @@ GLOBAL_LIST_EMPTY(cluwne_maze)
 		return target = current_victim
 
 	message_admins("Floor Cluwne is being deleted due to: [error_message]")
-	qdel(src)
+	Destroy()
 
 
 /mob/living/simple_animal/hostile/floor_cluwne/proc/Manifest()//handles disappearing and appearance anim
