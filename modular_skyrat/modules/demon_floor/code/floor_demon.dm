@@ -171,15 +171,15 @@ GLOBAL_LIST_EMPTY(cluwne_maze)
 		check_area = get_area(carbon_human.loc)
 		if(carbon_human.stat == DEAD)
 			message_admins("Floor Cluwne is being deleted due to: The target is dead.")
-			qdel(src)
+			Destroy()
 			return
 		if(is_type_in_typecache(check_area, invalid_area_typecache))
 			message_admins("Floor Cluwne is being deleted due to: The target is in an invalid area.")
-			qdel(src)
+			Destroy()
 			return
 		if(!is_station_level(carbon_human.z))
 			message_admins("Floor Cluwne is being deleted due to: The target is not on the station z-level.")
-			qdel(src)
+			Destroy()
 			return
 		current_victim = carbon_human
 		interest = 0
