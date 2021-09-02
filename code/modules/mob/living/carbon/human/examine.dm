@@ -31,7 +31,7 @@
 	else
 		species_name_string = ", [prefix_a_or_an(dna.species.name)] <EM>[dna.species.name]</EM>!"
 
-	. = list("<span class='info'>*---------*\nThis is <EM>[!obscure_name ? name : "Unknown"]</EM>[species_name_string]")
+	. = list("<span class='info'>*---------*\nThis is <EM>[!obscure_name ? "[get_examine_rank_name()]" : "Unknown"]</EM>[species_name_string]")
 	if(species_visible) //If they have a custom species shown, show the real one too
 		if(dna.features["custom_species"])
 			. += "[t_He] [t_is] [prefix_a_or_an(dna.species.name)] [dna.species.name]!"

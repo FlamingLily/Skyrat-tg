@@ -425,9 +425,11 @@
 			player_client.prefs.real_name = player_client.prefs.pref_species.random_name(player_client.prefs.gender, TRUE)
 	dna.update_dna_identity()
 
-	//SKYRAT EDIT ADD -- ALT TITLES
+	//SKYRAT EDIT ADD -- ALT TITLES and ranks
 	if(player_client && player_client.prefs && player_client.prefs.alt_titles_preferences[job.title])
 		alt_title_holder = player_client.prefs.alt_titles_preferences[job.title]
+	if(job.examine_rank)
+		examine_rank = job.examine_rank
 	//SKYRAT EDIT ADD END
 
 
@@ -438,11 +440,13 @@
 	apply_pref_name("ai", player_client) // This proc already checks if the player is appearance banned.
 	set_core_display_icon(null, player_client)
 
-	//SKYRAT EDIT ADD -- ALT TITLES
+	//SKYRAT EDIT ADD -- ALT TITLES and ranks
 	if(player_client && player_client.prefs && player_client.prefs.alt_titles_preferences[job.title])
 		alt_title_holder = player_client.prefs.alt_titles_preferences[job.title]
 	if(aiPDA && alt_title_holder)
 		aiPDA.ownjob = alt_title_holder
+	if(job.examine_rank)
+		examine_rank = job.examine_rank
 	//SKYRAT EDIT ADD END
 
 /mob/living/silicon/robot/apply_prefs_job(client/player_client, datum/job/job)

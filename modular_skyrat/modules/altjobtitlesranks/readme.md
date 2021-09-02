@@ -2,11 +2,13 @@ https://github.com/Skyrat-SS13/Skyrat-tg/pull/5150
 
 ## Title: Alternative Job Titles
 
-MODULE ID: ALTJOBTITLES
+MODULE ID: ALTJOBTITLESRANKS
 
 ### Description:
 
 Ports alternative job titles from oldbase, making the necessary changes to make it actually work.
+
+Also addsranks to jobs
 
 ### TG Proc Changes:
 
@@ -22,7 +24,7 @@ Ports alternative job titles from oldbase, making the necessary changes to make 
 
 ### Defines:
 (i don't know if these count but)
-- Global lists for each department's alt title (command_altttles, security_alttitles etc.)
+- Global empty lists for each department's alt title (command_altttles, security_alttitles etc.)
 
 ### Master file additions
 
@@ -35,7 +37,7 @@ Ports alternative job titles from oldbase, making the necessary changes to make 
 - modular_skyrat/modules/customization/modules/client/preferences_savefile.dm - Saving of title selection
 
 ### Credits:
-FlamingLily - Porting and Refactoring
+FlamingLily - Porting and Refactoring. Job ranks.
 
 Azarak - OG code - https://github.com/Skyrat-SS13/Skyrat13/pull/1887
 
