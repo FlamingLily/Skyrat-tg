@@ -82,5 +82,5 @@
 	return FALSE
 
 /mob/living/carbon/human/get_alt_name()
-	if(name != GetVoice())
+	if(name != GetVoice()) // SKYRAT EDIT -- ADDED check_voice_title()
 		return " (as [get_id_name("Unknown")])"\

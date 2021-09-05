@@ -30,7 +30,7 @@
 	if(istype(pda))
 		return pda.owner
 	return if_no_id
-
+/* SKYRAT EDIT MOVAL -- MOVED TO ALT TITLES AND RANKS
 //repurposed proc. Now it combines get_id_name() and get_face_name() to determine a mob's name variable. Made into a separate proc as it'll be useful elsewhere
 /mob/living/carbon/human/get_visible_name()
 	var/face_name = get_face_name("")
@@ -43,7 +43,7 @@
 		return face_name
 	if(id_name)
 		return id_name
-	return "Unknown"
+	return "Unknown" */ // SKYRAT EDIT MOVAL END
 
 //Returns "Unknown" if facially disfigured and real_name if not. Useful for setting name when Fluacided or when updating a human's name variable
 /mob/living/carbon/human/proc/get_face_name(if_no_face="Unknown")

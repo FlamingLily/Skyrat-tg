@@ -1,6 +1,6 @@
 /mob/living/silicon/ai/examine(mob/user)
 	//. = list("<span class='info'>*---------*\nThis is [icon2html(src, user)] \a <EM>[src]</EM>!") // SKYRAT EDIT ORIGINAL
-	. = list("<span class='info'>*---------*\nThis is [icon2html(src, user)] \a <EM>[get_examine_rank_name()]</EM>!") // SKYRAT EDIT ADD -- RANKS IN EXAMINE
+	. = list("<span class='info'>*---------*\nThis is [icon2html(src, user)] \a <EM>[get_visible_name()]</EM>!") // SKYRAT EDIT ADD -- RANKS IN EXAMINE
 	if (stat == DEAD)
 		. += span_deadsay("It appears to be powered-down.")
 	else

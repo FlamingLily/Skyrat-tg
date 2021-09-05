@@ -56,6 +56,11 @@ GLOBAL_LIST_INIT(freqtospan, list(
 	var/freqpart = radio_freq ? "\[[get_radio_name(radio_freq)]\] " : ""
 	//Speaker name
 	var/namepart = "[speaker.GetVoice()][speaker.get_alt_name()]"
+	//SKYRAT EDIT ADD -- TITLES IN VOICE
+	if(ishuman(speaker))
+		var/mob/living/carbon/human/human_speaker = speaker
+		if(human_speaker.get_voice_title())
+			namepart = human_speaker.get_voice_title()
 	if(face_name && ishuman(speaker))
 		var/mob/living/carbon/human/H = speaker
 		namepart = "[H.get_face_name()]" //So "fake" speaking like in hallucinations does not give the speaker away if disguised

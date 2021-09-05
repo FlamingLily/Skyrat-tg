@@ -430,6 +430,8 @@
 		alt_title_holder = player_client.prefs.alt_titles_preferences[job.title]
 	if(job.examine_rank)
 		examine_rank = job.examine_rank
+		add_verb(/mob/living/verb/toggle_displaying_title)
+		examine_rank_displaying = TRUE
 	//SKYRAT EDIT ADD END
 
 
@@ -447,6 +449,8 @@
 		aiPDA.ownjob = alt_title_holder
 	if(job.examine_rank)
 		examine_rank = job.examine_rank
+		add_verb(/mob/living/verb/toggle_displaying_title)
+		examine_rank_displaying = TRUE
 	//SKYRAT EDIT ADD END
 
 /mob/living/silicon/robot/apply_prefs_job(client/player_client, datum/job/job)
@@ -473,11 +477,15 @@
 	if(!GLOB.current_anonymous_theme && player_client.prefs.custom_names["cyborg"] != DEFAULT_CYBORG_NAME)
 		apply_pref_name("cyborg", player_client)
 
-	//SKYRAT EDIT ADD -- ALT TITLES
+	//SKYRAT EDIT ADD -- ALT TITLES and ranks
 	if(player_client && player_client.prefs && player_client.prefs.alt_titles_preferences[job.title])
 		alt_title_holder = player_client.prefs.alt_titles_preferences[job.title]
 	if(aiPDA && alt_title_holder)
 		aiPDA.ownjob = alt_title_holder
+	if(job.examine_rank)
+		examine_rank = job.examine_rank
+		add_verb(/mob/living/verb/toggle_displaying_title)
+		examine_rank_displaying = TRUE
 	//SKYRAT EDIT ADD END
 
 /**

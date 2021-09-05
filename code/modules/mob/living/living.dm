@@ -1024,9 +1024,9 @@
 
 /mob/living/proc/resist_restraints()
 	return
-
+/* SKYRAT EDIT MOVAL -- MOVED TO ALT JOB TITLES RANKS
 /mob/living/proc/get_visible_name()
-	return name
+	return name */
 
 /mob/living/update_gravity(has_gravity)
 	. = ..()
@@ -1498,7 +1498,7 @@
 
 	// can't spread fire to mobs that don't catch on fire
 	if(HAS_TRAIT(L, TRAIT_NOFIRE_SPREAD) || HAS_TRAIT(src, TRAIT_NOFIRE_SPREAD))
-		return 
+		return
 
 	if(on_fire)
 		if(L.on_fire) // If they were also on fire
